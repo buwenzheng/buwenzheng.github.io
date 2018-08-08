@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Solitude">
 <meta property="og:description" content="张北海 --《侠隐》有感">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-08T03:23:29.031Z">
+<meta property="og:updated_time" content="2018-08-08T08:26:30.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Solitude">
 <meta name="twitter:description" content="张北海 --《侠隐》有感">
@@ -356,7 +356,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  2,871
                 </span>
               
 
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  11
                 </span>
               
             </div>
@@ -397,7 +397,242 @@
       
 
       
-        
+        <h1 id="面试题目收集"><a href="#面试题目收集" class="headerlink" title="面试题目收集"></a>面试题目收集</h1><h3 id="编程思维"><a href="#编程思维" class="headerlink" title="编程思维"></a>编程思维</h3><ol>
+<li>如果让你用原生js设计一个树控件，说说你的设计思路</li>
+</ol>
+<ol start="2">
+<li>如果让你基于localstorage的1m空间，实现一个具有淘汰缓存机制的数据缓存系统，说说你的设计思路</li>
+</ol>
+<ol start="3">
+<li>举几个业务里的实际例子，说说你在设计模式的实际应用场景</li>
+</ol>
+<ol>
+<li>10个ajax请求同时发起，全部返回后展示所有响应结果，如何展现？如果容忍最多失败3个http请求失败，如何设计这个功能</li>
+</ol>
+<ol>
+<li>通过监控发现某页面A，全国范围内访问正常，但山东省内访问速度异常缓慢，是什么原因造成的？有什么办法能预防此类事故的发生？</li>
+</ol>
+<ol>
+<li>10W条记录的数组，一次性渲染到页面上，如何处理可以不冻结UI？</li>
+</ol>
+<h3 id="拓展类问题"><a href="#拓展类问题" class="headerlink" title="拓展类问题"></a>拓展类问题</h3><ol>
+<li><p>在前端或者整个计算机领域最擅长的那个点？</p>
+</li>
+<li><p>数据意义上的函数是如何定义的？</p>
+</li>
+</ol>
+<ol>
+<li>你觉得有什么问题我没问到你但是你又特别想跟我讲的</li>
+</ol>
+<ol>
+<li>说一下你项目中用到的技术栈，以及觉得得意和出色的点，以及让你头疼的点，怎么解决的。</li>
+</ol>
+<ol>
+<li>实现一个数组扁平化函数flatten进一步如何使之效率更高</li>
+</ol>
+<ol>
+<li>压缩数据[{id: 1, name: “1”}{id: 2, name: “2”}…{id: 10000, name: “10000”}]，使之更少的占用带宽</li>
+</ol>
+<ol>
+<li>实现一个事件Event类，包含on,off,emit方法</li>
+</ol>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ol>
+<li><p>盒子模型<br>html文档中的每个元素都被描绘成矩形盒子，这些矩形盒子通过一个模型来描述其占用空间，这个模型称为盒模型。盒模型通过四个边界来描述：margin（外边距），border（边框），padding（内边距），content（内容区域），如图所示<br><strong>几点要注意的地方</strong></p>
+<ol>
+<li>padding，border，margin都是可选的，默认值为0，但是浏览器会自行设置元素的margin和padding，需要手动覆盖掉</li>
+<li>如果给元素设置背景，并且边框的颜色为透明，背景将应用于内容，内边距和边框组成的区域。</li>
+<li>浏览器兼容性<br>一旦为页面设置了恰当的 DTD，大多数浏览器都会按照上面的图示来呈现内容。然而 IE 5 和 6 的呈现却是不正确的。<br>根据 W3C 的规范，元素内容占据的空间是由 width 属性设置的，而内容周围的 padding 和 border 值是另外计算的。<br>不幸的是，IE5.X 和 6 在怪异模式中使用自己的非标准模型。这些浏览器的 width 属性不是内容的宽度，而是内容、内边距和边框的宽度的总和。</li>
+</ol>
+</li>
+<li><p>浮动为什么会引起高度塌陷 </p>
+<blockquote>
+<p><a href="http://wiki.jikexueyuan.com/project/liujinsheng/note/float%E9%80%A0%E6%88%90%E7%9A%84%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7.html" target="_blank" rel="noopener">使用float造成容器高度塌陷的原理与解决方法</a> </p>
+<ul>
+<li>塌陷：父元素只包含浮动元素，那么它的高度就会塌缩为零（前提就是没有设置高度height属性,或者设置了为auto就会出现这种情况，当然不是所用的浏览器都是这样的，在IE8下面没有这种情况。）<tr></tr></li>
+<li>造成原因：float属性会使元素<code>脱离文档流</code>，这样会使该元素的父容器在计算自身高度的时候忽略了这个元素，加上父元素没有定义height或height为auto的时候就会造成高度塌陷</li>
+<li>自己的认知：脱离文档流的元素跟父元素不处于同一个纬度</li>
+</ul>
+</blockquote>
+</li>
+<li><p>清除浮动有哪几种方法  </p>
+<ol>
+<li>IE下给元素添加zoom:1仰视，不会干扰其他样式，haslayout</li>
+<li>一个<code>&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;</code>当作最后一个字元素标签放在父元素中<ul>
+<li>原理：clear:both 属性使该元素左右不允许产生浮动元素</li>
+<li>优点：简单直接，兼容性强</li>
+</ul>
+</li>
+<li><code>overflow:hidden</code>，开启BFC–块级排版上下文<ul>
+<li>原理： 相当于开启一块独立于文档流的区域，可以包裹浮动流</li>
+<li>缺点：溢出文本不显示<br>3.<code>.fix{zoom:1;}
+.fix:after{display:block; content:&#39;clear&#39;; clear:both; line-height:0; visibility:hidden;}</code></li>
+<li>(1) <code>display:block</code>使生成的元素以块级元素显示,占满剩余空间;</li>
+<li>(2) <code>height:0</code>避免生成内容破坏原有布局的高度。</li>
+<li>(3) <code>visibility:hidden</code>使生成的内容不可见，并允许可能被生成内容盖住的内容可以进行点击和交互;</li>
+<li>(4) 通过<code>content:&quot;&quot;</code>生成内容作为最后一个元素，至于content里面是点还是其他都是可以的</li>
+<li>(5) <code>zoom:1</code>触发IE hasLayout。</li>
+<li>除了<code>clear:both</code>用来闭合浮动的，其他代码无非都是为了隐藏掉<code>content</code>生成的内容，这也就是其他版本的闭合浮动为什么会有<code>font-size:0，line-height:0</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>清除浮动的原理</p>
+<ul>
+<li>总结：几种清除浮动的方式都是为了弥补浮动的缺陷，或者说是为了弥补浮动造成的恶果</li>
+</ul>
+</li>
+<li><p>BFC</p>
+<ul>
+<li>什么是：一些元素，<code>1、float属性不为none.
+2、position属性不为static和relative.
+3、display属性为下列之一:table-cell,table-caption,inline-block,flex,or inline-flex.
+4、overflow属性不为visible.
+，</code>他会建立一个新的块级格式化上下文。（相当于形成了一个独立于文档流之外的空间，内部不受外部文档流影响）</li>
+<li>作用： 阻止文本换行，（图片在左，文本不围绕图片）</li>
+</ul>
+</li>
+<li><p>哪些属性可以继承<br> <a href="https://www.jianshu.com/p/34044e3c9317" target="_blank" rel="noopener">可继承属性详解</a><br> 贴合实际运用分析： </p>
+<ul>
+<li>所有元素可继承：visibility和cursor。</li>
+<li>内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、 font-family、font-size、font-style、font-variant、font-weight、text- decoration、text-transform、direction。</li>
+<li>块状元素可继承：text-indent和text-align。</li>
+<li>列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。</li>
+<li>表格元素可继承：border-collapse。</li>
+<li>分析： 可继承的，字体样式：font-size color等，但是a标签是不继承color的，text-indent与text-align只有块元素能继承，行内元素无效，list-style等有序无序列表可继承</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li>两栏布局  <ul>
+<li>什么是： 左边定宽，右列自适应，反之</li>
+<li>实现：<a href="https://segmentfault.com/a/1190000004424442" target="_blank" rel="noopener">链接</a><ol>
+<li>纯左右浮动 </li>
+<li>相对定位，控制left距离</li>
+<li>float+BFC，左/右浮动，左/右BFC</li>
+<li>table（没用过）</li>
+<li>flex</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li><p>三栏布局 </p>
+<ul>
+<li>什么是： 两边固定，中间自适应</li>
+<li>实现：<a href="https://segmentfault.com/a/1190000008705541" target="_blank" rel="noopener">链接</a><ol>
+<li>float实现</li>
+<li>position</li>
+<li>float+BFC</li>
+<li>flex</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>移动端适配 </p>
+<ul>
+<li>说自己运用的，rem布局，<a href="https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">淘宝移动端布局方案</a> </li>
+</ul>
+</li>
+<li><p>浏览器兼容<br><a href="https://www.jianshu.com/p/eba18372a3c1" target="_blank" rel="noopener">浏览器兼容性问题及解决方案</a><br>说下几个常遇到的点</p>
+<ol>
+<li>浏览器的初始化样式不同导致的兼容性问题<ul>
+<li>解决：<a href="https://link.jianshu.com/?t=http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">Normalize.js</a>和<a href="https://link.jianshu.com/?t=http://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">reset.js</a>，Normalize 的理念则是尽量保留浏览器的默认样式，不进行太多的重置；而Reset的目的，是将所有的浏览器的自带样式重置掉，这样更易于保持各浏览器渲染的一致性。</li>
+</ul>
+</li>
+<li>局部样式解析不同的兼容问题，主要是IE与非IE浏览器之间的区别opacity的设置、盒模型解析方式不同、滚动条颜色设置</li>
+</ol>
+</li>
+<li><p>line-height: 150%和line-height:1.5的区别</p>
+<ul>
+<li><a href="http://www.cnblogs.com/fengzheng126/archive/2012/05/18/2507632.html" target="_blank" rel="noopener">深入了解line-height属性</a></li>
+</ul>
+</li>
+</ol>
+<ol>
+<li>移动端边框1px看起来很粗的解决办法 <ul>
+<li><a href="https://juejin.im/post/5a800ca95188257a604991e4" target="_blank" rel="noopener">移动端1px细线解决方案</a></li>
+<li>为什么—-viewport的设置和屏幕物理分辨率是按比例而不是相同的. 移动端window对象有个devicePixelRatio属性, 它表示设备物理像素和css像素的比例, 在retina屏的iphone手机上, 这个值为2或3, css里写的1px长度映射到物理像素上就有2px或3px那么长.（物理像素与css像素差距）</li>
+<li>解决方案：<ol>
+<li>使用小数来写px值—即通过媒体查询，media query对应devicePixelRatio有个查询值-webkit-min-device-pixel-ratio配置不同的比值下的边框宽度</li>
+<li>border-image–一张6x6的图片，九宫格等分填充border-image</li>
+<li>background渐变–背景渐变，渐变在透明色和边框色中间分割<br></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>css3了解多少，渐进增强和优雅降级<br><a href="https://juejin.im/post/58eda95261ff4b005819faf9" target="_blank" rel="noopener">渐进增强和优雅降级解析</a><br>css3新<a href="https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/" target="_blank" rel="noopener">特性</a><ol>
+<li>选择器、@Font-face特性（可使用服务端字体）</li>
+</ol>
+</li>
+</ol>
+<ol>
+<li>实现水平垂直居中的几种方法（高度和宽度不确定）<br><a href="https://www.tangshuang.net/3197.html" target="_blank" rel="noopener">不定元素宽高居中方法</a><ol>
+<li>position:fixed、0、margin:auto</li>
+<li>position:absolute、0、margin:auto</li>
+<li>display:table display:table-cell</li>
+<li>flex</li>
+</ol>
+</li>
+</ol>
+<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><ol>
+<li><p>数据类型有哪些(参考<a href="https://blog.csdn.net/a597926661/article/details/8000275" target="_blank" rel="noopener">JavaScript基本数据类型和内置数据类型
+</a>)</p>
+<ul>
+<li><p>基本数据类型<br>  undefined<br>  null<br>  string<br>  number<br>  boolean </p>
+<p>  注意:描述中仅仅是指代数据类型的名称，与js的全局对象Nan、Boolen、Number等不是一种概念</p>
+</li>
+<li>内置数据类型：<br>Function:函数类型的用户接口<br>Object:对象类型的用户接口<br>Boolean,Number,String:分别为这三种简单数据类型的<a href="http://www.cnblogs.com/dolphinX/p/3280340.html" target="_blank" rel="noopener">对象包装器</a><br>Date,Array,RegExp:内置拓展数据类型</li>
+<li>区别：<br>存储位置不同，基本（原始）数据类型直接存储在栈(stack)中的简单数据段，占用空间小、大小固定，且会频繁使用，所以会放到栈中存储<br>引用（内置）数据类型存储在堆(heap)中的对象，占据空间打、大小不固定，如果存储在栈中会影响性能；引用数据类型在栈中存储了指针，该指针指向堆中该实体地址的起始地址。当解释器寻找引用值的时候，会首先检索其在栈中的地址，取得地址后从堆中获得实体。<a href="https://blog.csdn.net/byr_syr/article/details/8573623" target="_blank" rel="noopener">堆栈的概念</a></li>
+</ul>
+</li>
+<li><p>闭包 </p>
+</li>
+</ol>
+<ol>
+<li><p>原型链<br>原型的继承机制是js设计之初所决定的，js的设计者设计这个语言的目的。选择了原型继承机制。</p>
+</li>
+<li><p>继承 </p>
+</li>
+</ol>
+<ol>
+<li>this指向 </li>
+</ol>
+<ol>
+<li>作用域 </li>
+</ol>
+<ol>
+<li><p>cookie和session有什么区别，cookie的大小是多少（4kb 二十条）<br>区别： </p>
+<ul>
+<li>session在服务端，cookie在客户端</li>
+<li>session默认被存在在服务器的一个文件里（不是内存）</li>
+<li>session 的运行依赖 session id，而 session id 是存在 cookie 中的，也就是说，如果浏览器禁用了 cookie ，同时 session 也会失效（但是可以通过其它方式实现，比如在 url 中传递 session_id）</li>
+<li>session 可以放在 文件、数据库、或内存中都可以。</li>
+<li>session维持客户端一个会话的唯一标识，即确认用户身份</li>
+</ul>
+</li>
+<li><p>深拷贝和浅拷贝的区别，手写深拷贝<br> 浅拷贝：复制对象的一层属性—-简单赋值，而且复制出的值与被复制的值指向同一个内存，修改任意一个两者的值都会改变。<code>Object.assign()</code>，浅拷贝，只拷贝属性值<br> 深拷贝：完全复制一个新的对象出来，并且与被复制的不是同一引用。对两者任一的更改操作不会相互影响</p>
+</li>
+<li><p>你的node项目中有几个进程，有几个线程，如果node进程崩溃了，如何知道</p>
+</li>
+</ol>
+<ol>
+<li>node中的process是什么</li>
+</ol>
+<ol>
+<li>你未来的发展规划</li>
+</ol>
+<ol>
+<li>localStorage和sessionStorage的区别是什么</li>
+</ol>
+<ol>
+<li>页面加载速度很慢，如何加速页面的渲染速度</li>
+</ol>
+<ol>
+<li>图片很大，如何进行优化</li>
+</ol>
+<h4 id="博文链接"><a href="#博文链接" class="headerlink" title="博文链接"></a>博文链接</h4><p><a href="https://www.jianshu.com/p/f60b619aa52b" target="_blank" rel="noopener">前端开发面试题总结之——CSS3</a></p>
+
       
     </div>
     
@@ -427,7 +662,7 @@
   <p><span>本文标题:</span><a href="/2018/08/07/BookReview-xiayin/"></a></p>
   <p><span>文章作者:</span><a href="/" title="访问 whenz 的个人博客">whenz</a></p>
   <p><span>发布时间:</span>2018年08月07日 - 17:08</p>
-  <p><span>最后更新:</span>2018年08月08日 - 11:08</p>
+  <p><span>最后更新:</span>2018年08月08日 - 16:08</p>
   <p><span>原始链接:</span><a href="/2018/08/07/BookReview-xiayin/" title="">http://buwenzheng.cn/2018/08/07/BookReview-xiayin/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://buwenzheng.cn/2018/08/07/BookReview-xiayin/"  aria-label="复制成功！"></i></span>
   </p>
@@ -532,8 +767,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -642,6 +886,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面试题目收集"><span class="nav-number">1.</span> <span class="nav-text">面试题目收集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编程思维"><span class="nav-number">1.0.1.</span> <span class="nav-text">编程思维</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓展类问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">拓展类问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS"><span class="nav-number">1.0.3.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javascript"><span class="nav-number">1.0.4.</span> <span class="nav-text">Javascript</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#博文链接"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">博文链接</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
