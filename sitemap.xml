@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.buwenzheng.cn/categories/index.html</loc>
+    
+    <lastmod>2018-08-10T08:14:11.618Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.buwenzheng.cn/tags/index.html</loc>
+    
+    <lastmod>2018-08-10T08:14:06.746Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.buwenzheng.cn/2018/08/10/Article-fly3/</loc>
     
     <lastmod>2018-08-10T08:07:59.012Z</lastmod>
@@ -40,20 +54,6 @@
     <loc>https://www.buwenzheng.cn/2018/08/07/BookReview-eyi/</loc>
     
     <lastmod>2018-08-09T06:54:28.575Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.buwenzheng.cn/tags/index.html</loc>
-    
-    <lastmod>2018-07-19T06:53:18.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.buwenzheng.cn/categories/index.html</loc>
-    
-    <lastmod>2018-07-19T06:53:14.120Z</lastmod>
     
   </url>
   
