@@ -4,29 +4,8 @@
 
     
   <url>
-    <loc>https://www.buwenzheng.cn/2018/08/20/Article-classicalPoetryCollection/</loc>
-    <lastmod>2018-08-20T15:24:56.088Z</lastmod>
-    <data>
-        <display>
-        <title>古诗词收集</title>
-        <pubTime>2018-08-20T15:02:30.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="杂文" url="https://www.buwenzheng.cn/categories/%E6%9D%82%E6%96%87/"/>
-          
-             
-              <breadCrumb title="句子收集" url="https://www.buwenzheng.cn/categories/%E6%9D%82%E6%96%87/%E5%8F%A5%E5%AD%90%E6%94%B6%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.buwenzheng.cn/2018/08/10/Article-collectedWorks/</loc>
-    <lastmod>2018-08-20T15:15:52.352Z</lastmod>
+    <lastmod>2018-08-20T15:26:48.343Z</lastmod>
     <data>
         <display>
         <title>偶尔想到的句子</title>
@@ -41,6 +20,27 @@
           
              
               <breadCrumb title="一些句子" url="https://www.buwenzheng.cn/categories/%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/%E4%B8%80%E4%BA%9B%E5%8F%A5%E5%AD%90/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.buwenzheng.cn/2018/08/20/Article-classicalPoetryCollection/</loc>
+    <lastmod>2018-08-20T15:24:56.088Z</lastmod>
+    <data>
+        <display>
+        <title>古诗词收集</title>
+        <pubTime>2018-08-20T15:02:30.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="杂文" url="https://www.buwenzheng.cn/categories/%E6%9D%82%E6%96%87/"/>
+          
+             
+              <breadCrumb title="句子收集" url="https://www.buwenzheng.cn/categories/%E6%9D%82%E6%96%87/%E5%8F%A5%E5%AD%90%E6%94%B6%E9%9B%86/"/>
           
         </display>
     </data>
