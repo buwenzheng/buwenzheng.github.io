@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Solitude">
 <meta property="og:description" content="一些面试题目收集">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-10T06:36:43.266Z">
+<meta property="og:updated_time" content="2018-08-27T08:56:49.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="近期前端面试题目收集">
 <meta name="twitter:description" content="一些面试题目收集">
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-10T14:36:43+08:00">
-                2018-08-10
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-27T16:56:49+08:00">
+                2018-08-27
               </time>
             
           </span>
@@ -361,16 +361,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/18/Program-interview/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/18/Program-interview/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -391,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,871
+                  2,865
                 </span>
               
 
@@ -420,13 +410,13 @@
       
 
       
-        <h1 id="面试题目收集"><a href="#面试题目收集" class="headerlink" title="面试题目收集"></a>面试题目收集</h1><h3 id="编程思维"><a href="#编程思维" class="headerlink" title="编程思维"></a>编程思维</h3><ol>
+        <h2 id="编程思维"><a href="#编程思维" class="headerlink" title="编程思维"></a>编程思维</h2><ol>
 <li>如果让你用原生js设计一个树控件，说说你的设计思路</li>
 </ol>
-<ol start="2">
+<ol>
 <li>如果让你基于localstorage的1m空间，实现一个具有淘汰缓存机制的数据缓存系统，说说你的设计思路</li>
 </ol>
-<ol start="3">
+<ol>
 <li>举几个业务里的实际例子，说说你在设计模式的实际应用场景</li>
 </ol>
 <ol>
@@ -438,7 +428,7 @@
 <ol>
 <li>10W条记录的数组，一次性渲染到页面上，如何处理可以不冻结UI？</li>
 </ol>
-<h3 id="拓展类问题"><a href="#拓展类问题" class="headerlink" title="拓展类问题"></a>拓展类问题</h3><ol>
+<h2 id="拓展类问题"><a href="#拓展类问题" class="headerlink" title="拓展类问题"></a>拓展类问题</h2><ol>
 <li><p>在前端或者整个计算机领域最擅长的那个点？</p>
 </li>
 <li><p>数据意义上的函数是如何定义的？</p>
@@ -459,7 +449,7 @@
 <ol>
 <li>实现一个事件Event类，包含on,off,emit方法</li>
 </ol>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ol>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ol>
 <li><p>盒子模型<br>html文档中的每个元素都被描绘成矩形盒子，这些矩形盒子通过一个模型来描述其占用空间，这个模型称为盒模型。盒模型通过四个边界来描述：margin（外边距），border（边框），padding（内边距），content（内容区域），如图所示<br><strong>几点要注意的地方</strong></p>
 <ol>
 <li>padding，border，margin都是可选的，默认值为0，但是浏览器会自行设置元素的margin和padding，需要手动覆盖掉</li>
@@ -485,7 +475,7 @@
 <li>优点：简单直接，兼容性强</li>
 </ul>
 </li>
-<li><code>overflow:hidden</code>，开启BFC–块级排版上下文<ul>
+<li><code>overflow:hidden</code>，开启BFC—块级排版上下文<ul>
 <li>原理： 相当于开启一块独立于文档流的区域，可以包裹浮动流</li>
 <li>缺点：溢出文本不显示<br>3.<code>.fix{zoom:1;}
 .fix:after{display:block; content:&#39;clear&#39;; clear:both; line-height:0; visibility:hidden;}</code></li>
@@ -575,11 +565,11 @@
 <ol>
 <li>移动端边框1px看起来很粗的解决办法 <ul>
 <li><a href="https://juejin.im/post/5a800ca95188257a604991e4" target="_blank" rel="noopener">移动端1px细线解决方案</a></li>
-<li>为什么—-viewport的设置和屏幕物理分辨率是按比例而不是相同的. 移动端window对象有个devicePixelRatio属性, 它表示设备物理像素和css像素的比例, 在retina屏的iphone手机上, 这个值为2或3, css里写的1px长度映射到物理像素上就有2px或3px那么长.（物理像素与css像素差距）</li>
+<li>为什么——viewport的设置和屏幕物理分辨率是按比例而不是相同的. 移动端window对象有个devicePixelRatio属性, 它表示设备物理像素和css像素的比例, 在retina屏的iphone手机上, 这个值为2或3, css里写的1px长度映射到物理像素上就有2px或3px那么长.（物理像素与css像素差距）</li>
 <li>解决方案：<ol>
-<li>使用小数来写px值—即通过媒体查询，media query对应devicePixelRatio有个查询值-webkit-min-device-pixel-ratio配置不同的比值下的边框宽度</li>
-<li>border-image–一张6x6的图片，九宫格等分填充border-image</li>
-<li>background渐变–背景渐变，渐变在透明色和边框色中间分割<br></li>
+<li>使用小数来写px值—-即通过媒体查询，media query对应devicePixelRatio有个查询值-webkit-min-device-pixel-ratio配置不同的比值下的边框宽度</li>
+<li>border-image—一张6x6的图片，九宫格等分填充border-image</li>
+<li>background渐变—背景渐变，渐变在透明色和边框色中间分割<br></li>
 </ol>
 </li>
 </ul>
@@ -598,7 +588,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><ol>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><ol>
 <li><p>数据类型有哪些(参考<a href="https://blog.csdn.net/a597926661/article/details/8000275" target="_blank" rel="noopener">JavaScript基本数据类型和内置数据类型
 </a>)</p>
 <ul>
@@ -634,7 +624,7 @@
 <li>session维持客户端一个会话的唯一标识，即确认用户身份</li>
 </ul>
 </li>
-<li><p>深拷贝和浅拷贝的区别，手写深拷贝<br> 浅拷贝：复制对象的一层属性—-简单赋值，而且复制出的值与被复制的值指向同一个内存，修改任意一个两者的值都会改变。<code>Object.assign()</code>，浅拷贝，只拷贝属性值<br> 深拷贝：完全复制一个新的对象出来，并且与被复制的不是同一引用。对两者任一的更改操作不会相互影响</p>
+<li><p>深拷贝和浅拷贝的区别，手写深拷贝<br> 浅拷贝：复制对象的一层属性——简单赋值，而且复制出的值与被复制的值指向同一个内存，修改任意一个两者的值都会改变。<code>Object.assign()</code>，浅拷贝，只拷贝属性值<br> 深拷贝：完全复制一个新的对象出来，并且与被复制的不是同一引用。对两者任一的更改操作不会相互影响</p>
 </li>
 <li><p>你的node项目中有几个进程，有几个线程，如果node进程崩溃了，如何知道</p>
 </li>
@@ -654,7 +644,7 @@
 <ol>
 <li>图片很大，如何进行优化</li>
 </ol>
-<h4 id="博文链接"><a href="#博文链接" class="headerlink" title="博文链接"></a>博文链接</h4><p><a href="https://www.jianshu.com/p/f60b619aa52b" target="_blank" rel="noopener">前端开发面试题总结之——CSS3</a></p>
+<h3 id="博文链接"><a href="#博文链接" class="headerlink" title="博文链接"></a>博文链接</h3><p><a href="https://www.jianshu.com/p/f60b619aa52b" target="_blank" rel="noopener">前端开发面试题总结之——CSS3</a></p>
 
       
     </div>
@@ -685,7 +675,7 @@
   <p><span>本文标题:</span><a href="/2018/07/18/Program-interview/">近期前端面试题目收集</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 buwenzheng 的个人博客">buwenzheng</a></p>
   <p><span>发布时间:</span>2018年07月18日 - 14:07</p>
-  <p><span>最后更新:</span>2018年08月10日 - 14:08</p>
+  <p><span>最后更新:</span>2018年08月27日 - 16:08</p>
   <p><span>原始链接:</span><a href="/2018/07/18/Program-interview/" title="近期前端面试题目收集">https://www.buwenzheng.cn/2018/07/18/Program-interview/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.buwenzheng.cn/2018/07/18/Program-interview/"  aria-label="复制成功！"></i></span>
   </p>
@@ -769,7 +759,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTI4OS8xNTgxNg=="></div>
     </div>
+
   
 
 
@@ -922,7 +914,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面试题目收集"><span class="nav-number">1.</span> <span class="nav-text">面试题目收集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编程思维"><span class="nav-number">1.0.1.</span> <span class="nav-text">编程思维</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓展类问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">拓展类问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS"><span class="nav-number">1.0.3.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javascript"><span class="nav-number">1.0.4.</span> <span class="nav-text">Javascript</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#博文链接"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">博文链接</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编程思维"><span class="nav-number">1.</span> <span class="nav-text">编程思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展类问题"><span class="nav-number">2.</span> <span class="nav-text">拓展类问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">3.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Javascript"><span class="nav-number">4.</span> <span class="nav-text">Javascript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#博文链接"><span class="nav-number">4.1.</span> <span class="nav-text">博文链接</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1110,37 +1102,26 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: true,
-        appId: 'EvKaYVKqwRfMKSldIoH5u6KJ-gzGzoHsz',
-        appKey: 'nlW2e0hyh7uIuISTvyJUOAXh',
-        placeholder: '快来说两句呗~',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
+
+
+
+
+
+
+
+
 
 
 
